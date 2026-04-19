@@ -7,7 +7,19 @@ const MESSAGES: string[] = [
   "Hi, I'm Dev",
   "Dev the Developer",
   "Software \_Engineer",
-
+  "Full Stack Dev",
+  "Hi, I'm Dev",
+  "Dev the Developer",
+  "Data Scientist",
+  "AI/ML Developer",
+  "Hi, I'm Dev",
+  "Dev the Developer",
+  "Solutions Architect",
+  "UI/UX Developer",
+  "Hi, I'm Dev",
+  "Dev the Developer",
+  "Problem Solver",
+  "Quick Learner"
 ];
 
 export default function TextFlippingBoardHero() {
