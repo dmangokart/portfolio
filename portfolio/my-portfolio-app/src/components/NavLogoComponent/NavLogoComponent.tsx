@@ -6,7 +6,7 @@ import "./NavLogoComponent.css";
 const MESSAGES: string[] = [
   "Hi, I'm Dev",
   "Dev the Developer",
-  "Software Engineer",
+  "Software \_Engineer",
 
 ];
 

@@ -36,7 +36,7 @@ const ACCENT_COLORS: AccentColor[] = [
 ];
 
 const CELL_TEXT_STYLE: React.CSSProperties = {
-  fontSize: "clamp(2rem, 4vw, 2rem)",
+  fontSize: "clamp(1.5rem, 3vw, 1.75rem)",
   lineHeight: 1,
 };
 
@@ -134,7 +134,7 @@ const FlapCell = React.memo(function FlapCell({
   const bottomDelay = flipDuration * 0.5;
 
   return (
-    <div className="flex aspect-3/6 flex-col overflow-hidden rounded-[2px] border border-neutral-300 md:rounded-[3px] md:border-2 dark:border-black">
+    <div className="flex aspect-[4/6] flex-col overflow-hidden rounded-[2px] border border-neutral-300 md:rounded-[3px] md:border-2 dark:border-black">
       {/* Flap content area */}
       <div className="relative flex-1 perspective-dramatic transform-3d">
         <div className="absolute inset-0 z-40 hidden flex-row items-center justify-center md:flex">
