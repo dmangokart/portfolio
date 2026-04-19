@@ -1,0 +1,130 @@
+@layer components {
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    border-bottom: 1px solid rgb(229 231 235);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+  }
+
+  .dark .navbar {
+    border-bottom-color: rgb(39 39 40);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .navbar-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-width: 64rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+  @media (min-width: 640px) {
+    .navbar-container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .navbar-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .navbar-logo {
+    flex-shrink: 0;
+    width: 11rem;
+    transition: opacity 0.15s ease-in-out;
+  }
+
+  .navbar-logo:hover {
+    opacity: 0.8;
+  }
+
+  @media (min-width: 640px) {
+    .navbar-logo {
+      width: 14rem;
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.125rem;
+  }
+
+  @media (min-width: 640px) {
+    .navbar-nav {
+      gap: 0.25rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .navbar-nav {
+      gap: 0.5rem;
+    }
+  }
+
+  .navbar-link {
+    border-radius: 0.375rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.0625rem;
+    padding-bottom: 0.0625rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 500;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 640px) {
+    .navbar-link {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+      padding-top: 0.125rem;
+      padding-bottom: 0.125rem;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  .navbar-link-active {
+    background-color: rgb(243 244 246);
+    color: rgb(17 24 39);
+  }
+
+  .dark .navbar-link-active {
+    background-color: rgb(17 24 39);
+    color: rgb(255 255 255);
+  }
+
+  .navbar-link-inactive {
+    color: rgb(75 85 99);
+  }
+
+  .navbar-link-inactive:hover {
+    background-color: rgb(249 250 251);
+    color: rgb(17 24 39);
+  }
+
+  .dark .navbar-link-inactive {
+    color: rgb(156 163 175);
+  }
+
+  .dark .navbar-link-inactive:hover {
+    background-color: rgb(17 24 39);
+    color: rgb(255 255 255);
+  }
+}

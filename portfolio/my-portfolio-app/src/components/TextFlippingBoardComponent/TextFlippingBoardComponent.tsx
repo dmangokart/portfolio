@@ -1,13 +1,11 @@
 "use client";
 import React, { useState, useEffect, useCallback } from "react";
-import { TextFlippingBoard } from "@/components/ui/text-flipping-board";
+import { TextFlippingBoard } from "@/components/ui/textflippingboardUI";
+import "./TextFlippingBoardComponent.css";
 
 const MESSAGES: string[] = [
-  "STAY HUNGRY \nSTAY IN BED \n- STEVE JOBS",
-  "What did you get done this week?",
-  "I burned $20 \nfor this shit.",
-  "DONT WORRY \nBE HAPPY FFS.",
-  "LADIES AND GENTLEMEN \nWELCOME TO F#!@# C!@$",
+  "Hi, Im Dev",
+  "I'm a developer",
 ];
 
 export default function TextFlippingBoardHero() {
@@ -24,7 +22,7 @@ export default function TextFlippingBoardHero() {
   }, [next]);
 
   return (
-    <div className="flex w-full flex-col items-center justify-center gap-8 py-20">
+    <div className="text-flipping-board-wrapper">
       <TextFlippingBoard text={MESSAGES[msgIdx]} duration={0.5} />
     </div>
   );

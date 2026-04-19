@@ -1,4 +1,4 @@
-import TextFlippingBoardHero from "@/components/HeroTextFlippingBoard";
+import TextFlippingBoardHero from "@/components/TextFlippingBoardComponent/TextFlippingBoardComponent";
 
 export default function Home() {
   return (

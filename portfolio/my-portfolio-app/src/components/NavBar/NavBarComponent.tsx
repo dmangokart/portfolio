@@ -3,6 +3,9 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+import NavLogoComponent from "../NavLogoComponent/NavLogoComponent";
+import { ThemeToggle } from "../ui/ThemeToggleUI";
+import "./NavBarComponent.css";
 
 const navItems = [
   { label: "About Me", href: "/about" },
@@ -16,16 +19,15 @@ export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/80 backdrop-blur-md dark:border-neutral-800 dark:bg-black/80">
-      <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4 sm:px-8">
-        <Link
-          href="/"
-          className="text-xl font-bold text-neutral-900 transition-colors hover:text-neutral-700 dark:text-white dark:hover:text-neutral-300"
-        >
-          Portfolio
+    <nav className="navbar">
+      <div className="navbar-container">
+        {/* Logo - constrained width */}
+        <Link href="/" className="navbar-logo">
+          <NavLogoComponent />
         </Link>
 
-        <div className="flex items-center gap-1 sm:gap-2">
+        {/* Navigation items */}
+        <div className="navbar-nav">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
@@ -33,16 +35,15 @@ export function Navigation() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "rounded-md px-3 py-2 text-sm font-medium transition-colors",
-                  isActive
-                    ? "bg-neutral-100 text-neutral-900 dark:bg-neutral-900 dark:text-white"
-                    : "text-neutral-600 hover:bg-neutral-50 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-white",
+                  "navbar-link",
+                  isActive ? "navbar-link-active" : "navbar-link-inactive",
                 )}
               >
                 {item.label}
               </Link>
             );
           })}
+          <ThemeToggle />
         </div>
       </div>
     </nav>
