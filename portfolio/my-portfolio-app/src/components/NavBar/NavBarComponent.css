@@ -4,14 +4,14 @@
     top: 0;
     z-index: 50;
     width: 100%;
-    border-bottom: 1px solid rgb(229 231 235);
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    background-color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(14px);
   }
 
   .dark .navbar {
-    border-bottom-color: rgb(39 39 40);
-    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(8, 15, 31, 0.92);
   }
 
   .navbar-container {
@@ -104,33 +104,33 @@
   }
 
   .navbar-link-active {
-    background-color: rgb(27, 92, 231);
+    background-color: rgb(59 130 246);
     color: rgb(255 255 255);
     padding: 0.75rem;
   }
 
   .dark .navbar-link-active {
-    background-color: rgb(27, 92, 231);
+    background-color: rgb(59 130 246);
     color: rgb(255 255 255);
     padding: 0.75rem;
   }
 
   .navbar-link-inactive {
-    color: rgb(75 85 99);
+    color: rgb(30 41 59);
   }
 
   .navbar-link-inactive:hover {
-    background-color: rgb(249 250 251);
-    color: rgb(17 24 39);
+    background-color: rgba(56, 189, 248, 0.16);
+    color: rgb(15 23 42);
     padding: 0.75rem;
   }
 
   .dark .navbar-link-inactive {
-    color: rgb(156 163 175);
+    color: rgb(203 213 225);
   }
 
   .dark .navbar-link-inactive:hover {
-    background-color: rgb(17 24 39);
+    background-color: rgba(56, 189, 248, 0.16);
     color: rgb(255 255 255);
   }
 }
