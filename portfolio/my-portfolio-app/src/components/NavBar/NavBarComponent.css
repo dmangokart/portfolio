@@ -119,6 +119,10 @@
     color: rgb(30 41 59);
   }
 
+  .dark .navbar-link-inactive {
+    color: rgb(226 232 240);
+  }
+
   .navbar-link-inactive:hover {
     background-color: rgba(56, 189, 248, 0.16);
     color: rgb(15 23 42);

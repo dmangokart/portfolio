@@ -42,6 +42,12 @@
   --card-foreground: #0f172a;
   --popover: #ffffff;
   --popover-foreground: #0f172a;
+  --surface: #ffffff;
+  --surface-foreground: #0f172a;
+  --surface-muted: rgba(15, 23, 42, 0.06);
+  --surface-border: rgba(15, 23, 42, 0.08);
+  --surface-shadow: rgba(15, 23, 42, 0.08);
+  --hero-bg: radial-gradient(circle_at_top_left, rgba(14, 165, 233, 0.12), transparent 25%), radial-gradient(circle_at_80%_20%, rgba(248, 113, 113, 0.1), transparent 20%), linear-gradient(180deg, #e2e8f0 0%, #ffffff 100%);
   --primary: #1b5ce7;
   --primary-foreground: #ffffff;
   --secondary: #0ea5e9;
@@ -77,6 +83,12 @@
   --card-foreground: #f8fafc;
   --popover: rgba(15, 23, 42, 0.95);
   --popover-foreground: #f8fafc;
+  --surface: rgba(15, 23, 42, 0.95);
+  --surface-foreground: #f8fafc;
+  --surface-muted: rgba(148, 163, 184, 0.12);
+  --surface-border: rgba(255, 255, 255, 0.08);
+  --surface-shadow: rgba(0, 0, 0, 0.25);
+  --hero-bg: radial-gradient(circle_at_top_left, rgba(14, 165, 233, 0.12), transparent 25%), radial-gradient(circle_at_80%_20%, rgba(248, 113, 113, 0.1), transparent 20%), linear-gradient(180deg, #020617 0%, #050816 100%);
   --primary: #1b5ce7;
   --primary-foreground: #ffffff;
   --secondary: #0ea5e9;
