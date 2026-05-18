@@ -17,7 +17,7 @@ export function Navigation() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a href="#hero" className="navbar-logo">
+        <a href="" className="navbar-logo">
           <NavLogoComponent />
         </a>
 

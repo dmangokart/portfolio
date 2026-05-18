@@ -80,14 +80,8 @@ export default function Home() {
     </div>
   ));
 
-  return (
-    <div
-      className="relative overflow-hidden text-foreground"
-      style={{
-        backgroundColor: "var(--background)",
-        backgroundImage: "var(--hero-bg)",
-      }}
-    >
+    return (
+      <div className="relative overflow-hidden text-foreground">
       <section id="hero" className="relative min-h-screen px-6 py-24 lg:px-10">
         <div className="absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_top,rgba(14,165,233,0.18),transparent_35%)]" />
         <div className="mx-auto grid max-w-7xl gap-16 xl:grid-cols-[1.2fr_0.8fr] xl:items-center">
@@ -201,9 +195,9 @@ export default function Home() {
               <DitherShader
                 src="/headshot%202025%20copy.png"
                 colorMode="duotone"
-                primaryColor="#0ea5e9"
+                primaryColor="#2983ad"
                 secondaryColor="#f97316"
-                gridSize={4}
+                gridSize={1}
                 objectFit="cover"
                 className="h-full min-h-[32rem] w-full rounded-[2rem]"
               />
